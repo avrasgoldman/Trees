@@ -1,0 +1,96 @@
+Family,Scientific Name,Common Name,Foliage,Fruit,Bloom,Watering Needs,Drought-Tolerant?,Wind Tolerance
+Anacardiaceae,Schinus terebinthifolia,Brazilian Pepper Tree,evergreen,showy,not showy,low,no,medium
+Arecaceae,Syagrus romanzoffiana,Queen Palm,evergreen,not showy,not showy,moderate,no,medium
+Arecaceae,Trachycarpus fortunei,Windmill Palm,evergreen,showy,not showy,moderate,no,medium
+Arecaceae,Trachycarpus wagnerianus,Mediterranean Fan Palm,evergreen,not showy,not showy,Moderate,yes,high
+Betulaceae,Betula nigra,River Birch,deciduous,showy,not showy,high,no,medium
+Betulaceae,Betula pendula,European White Birch,deciduous,showy,not showy,moderate,no,medium
+Casuarinaceae,Allocasuarina verticillata,"Mountain She-Oak, Beefwood",evergreen,not showy,not showy,moderate,yes,high
+Celastraceae,Maytenus boaria ‘Green Showers’,Mayten,evergreen,not showy,not showy,moderate,no,high
+Cornaceae,Griselinia littoralis,Griselinia,evergreen,not showy,not showy,high,no,high
+Fabaceae,Acacia melanoxylon,Black Acacia,evergreen,not showy,not showy,moderate,yes,medium
+Fabaceae,Ceratonia siliqua,Carob Tree,evergreen,showy,not showy,low,yes,medium
+Fabaceae,Gleditsia triacanthos var. inermis ‘Shademaster’,Honeylocust,deciduous,not showy,not showy,moderate,yes,medium
+Fagaceae,Quercus agrifolia,Coast Live Oak,evergreen,showy,not showy,low,yes,medium
+Fagaceae,Quercus coccinea,Scarlet Oak,deciduous,showy,not showy,moderate,yes,medium
+Fagaceae,Quercus suber,Cork Oak,evergreen,showy,not showy,moderate,yes,medium
+Ginkgoaceae,Ginkgo biloba,Maidenhair Tree,deciduous,not showy,not showy,low,yes,low
+Hamamelidaceae,Liquidambar orientalis,Oriental Sweetgum,deciduous,showy,not showy,moderate,no,medium
+Hamamelidaceae,Liquidambar styraciflua ‘Rotundiloba’/ ‘Palo Alto’/ ‘Burgundy’/ ‘Festival’,American Sweet Gum,deciduous,not showy,not showy,moderate,no,medium
+Lauraceae,Laurus nobilis,Grecian Laurel,evergreen,not showy,not showy,moderate,yes,medium
+Moraceae,Morus alba “fruitless”,White Mulberry,deciduous,not showy,not showy,moderate,yes,medium
+Myrtaceae,Eucalyptus polyanthemos,Silver Dollar Gum,evergreen,not showy,not showy,low,yes,medium
+Oleaceae,Fraxinus americana,White Ash,deciduous,showy,not showy,moderate,no,medium
+Oleaceae,Fraxinus angustifolia 'Raywood',Raywood Ash,deciduous,not showy,not showy,moderate,no,low
+Oleaceae,Fraxinus uhdei,Evergreen Ash,semi-deciduous,not showy,not showy,moderate,yes,low
+Pinus,Pinus pinea,Italian Stone Pine,evergreen,not showy,not showy,low,yes,medium
+Platanaceae,Platanus x hispanica ‘Columbia’/ ‘Yarwood’/ ‘Bloodgood’,London Plane Tree,deciduous,showy,not showy,moderate,no,medium
+Podocarpaceae,"Podocarpus gracilior, syn. Afrocarpus gracilior",Fern Pine,evergreen,not showy,not showy,low,no,medium
+Sapindaceae,Cupaniopsis anacardioides,Carrotwood,evergreen,showy,not showy,moderate,yes,high
+Sapindaceae (Aceraceae),Acer buergeranum,Trident Maple,deciduous,not showy,not showy,high,yes,medium
+Sapindaceae (Aceraceae),Acer circinatum,Vine Maple,deciduous,showy,not showy,high,no,low
+Sapindaceae (Aceraceae),Acer palmatum,Japanese Maple,deciduous,not showy,not showy,high,no,low
+Ulmaceae,Ulmus parvifolia ‘Drake’ / ‘Sempervirens’ / ‘True Green’,Chinese Elm,semi-deciduous,not showy,not showy,moderate,no,low
+Agavaceae,Cordyline australis,Dracaena Palm,evergreen,not showy,showy,moderate,yes,medium
+Anacardiaceae,Pistacia chinensis,Chinese Pistache,deciduous,showy,showy,low,yes,medium
+Anacardiaceae,Schinus molle,Pepper Tree,evergreen,showy,showy,low,yes,medium
+Bignoniaceae,Jacaranda mimosifolia,Jacaranda,semi-deciduous,showy,showy,moderate,no,low
+Elaeocarpaceae,Elaeocarpus decipiens,Japanese Blueberry Tree,evergreen,showy,showy,high,no,low
+Ericaceae,Arbutus 'Marina',Strawberry Tree,evergreen,showy,showy,low,yes,medium
+Fabaceae,Acacia baileyana,Bailey's Acacia,evergreen,showy,showy,low,yes,medium
+Fabaceae,Cassia leptophylla,Gold Medallion Tree,evergreen,showy,showy,moderate,yes,medium
+Fabaceae,Cercis occidentalis,Western Redbud,deciduous,showy,showy,low,yes,low
+Fabaceae,Robinia x ambigua 'Purple Robe',Purple Robe Locust,deciduous,showy,showy,low,yes,medium
+Lauraceae,Cinnamomum camphora,Camphor Tree,evergreen,not showy,showy,moderate,yes,medium
+Lythraceae,Lagerstroemia ‘Tuscarora’/ ‘Natchez’,Crepe Myrtle,deciduous,showy,showy,moderate,yes,high
+Magnoliaceae,Magnolia champaca (Michelia champaca),Champaca,evergreen,showy,showy,moderate,no,low
+Magnoliaceae,Magnolia doltsopa (Michelia doltsopa),Sweet Michelia,evergreen,showy,showy,high,no,low
+Magnoliaceae,Magnolia grandiflora,Southern Magnolia,evergreen,showy,showy,high,yes,low
+Magnoliaceae,Magnolia x soulangiana,Saucer Magnolia,deciduous,showy,showy,moderate,no,low
+Malvaceae,Lagunaria patersonii,Primrose Tree,evergreen,showy,showy,moderate,yes,high
+Myoporaceae,Myoporum laetum 'Clean n Green',Myoporum,evergreen,not showy,showy,moderate,no,high
+Myrtaceae,Agonis flexuosa,Peppermint Willow,evergreen,not showy,showy,Moderate,yes,medium
+Myrtaceae,Callistemon citrinus,Lemon Bottlebrush,evergreen,not showy,showy,low,yes,high
+Myrtaceae,Callistemon viminalis,Weeping Bottlebrush,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Corymbia ficifolia,Red-flowering Gum,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Eucalyptus sideroxylon ‘Rosea’,Red Ironbark,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Leptospermum laevigatum,Australian Tea Tree,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Leptospermum scoparium,New Zealand Tea Tree,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Lophostemon confertus,Brisbane Box,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Melaleuca ericifolia,Heath Melaleuca,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Melaleuca linariifolia,Flaxleaf Paperbark,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Melaleuca nesophila,Pink Melaleuca,evergreen,not showy,showy,low,yes,high
+Myrtaceae,Melaleuca quinquenervia,Cajeput Tree,evergreen,not showy,showy,low,yes,medium
+Myrtaceae,Metrosideros excelsa,New Zealand Christmas Tree,evergreen,not showy,showy,low,yes,high
+Myrtaceae,Tristaniopsis laurina (formerly Tristania laurina),Small-Leaf Tristania,evergreen,not showy,showy,moderate,no,high
+Oleaceae,Ligustrum lucidum,Glossy Privet,evergreen,not showy,showy,low,yes,low
+Oleaceae,Olea europaea ‘Majestic Beauty’/ ‘Fruitless’/ ‘Swan Hill’,Olive Tree,evergreen,not showy,showy,low,yes,high
+Pittosporaceae,Hymenosporum flavum,Sweetshade,evergreen,showy,showy,moderate,no,low
+Pittosporaceae,Pittosporum crassifolium,Karo,evergreen,showy,showy,low,yes,high
+Pittosporaceae,Pittosporum eugeniodes,Lemonwood Tree,evergreen,showy,showy,low,yes,low
+Pittosporaceae,Pittosporum tenuifolium,"Kohuhu, Black Pittosporum",evergreen,showy,showy,moderate,no,medium
+Pittosporaceae,Pittosporum undulatum,Victorian Box,evergreen,showy,showy,low,yes,high
+Proteaceae,Hakea suaveolens,Sweet Hakea,evergreen,not showy,showy,low,yes,medium
+Rhamnaceae,Ceanothus ‘Ray Hartman’,California Lilac,evergreen,not showy,showy,low,yes,high
+Rosaceae,Crataegus laevigata,English Hawthorn,deciduous,showy,showy,low,yes,medium
+Rosaceae,Crataegus phaenopyrum,Washington Thorn,deciduous,showy,showy,moderate,yes,medium
+Rosaceae,Eriobotrya deflexa,Bronze Loquat,evergreen,not showy,showy,moderate,yes,low
+Rosaceae,Lyonothamnus floribundus asplenifolius,Fernleaf Catalina Ironwood,evergreen,not showy,showy,low,yes,high
+Rosaceae,Malus floribunda ‘Prarie Fire’,Japanese Flowering Crabapple,deciduous,showy,showy,moderate,no,low
+Rosaceae,Prunus cerasifera ‘Krauter Vesuvius’,Purple-Leaf Plum,deciduous,not showy,showy,moderate,no,low
+Rosaceae,Prunus lyonii,Catalina Cherry,evergreen,showy,showy,low,yes,high
+Rosaceae,Prunus serrulata ‘Kwanzan’,Flowering Cherry,deciduous,not showy,showy,moderate,no,low
+Rosaceae,Prunus x blireana,Flowering Plum,deciduous,showy,showy,moderate,no,low
+Rosaceae,Prunus x yedoensis ‘Akebono’,Daybreak Cherry,deciduous,not showy,showy,moderate,no,low
+Rosaceae,Pyrus calleryana ‘Chanticleer’/ ‘New Bradford’/ ‘Aristocrat’ ,Flowering Pear,deciduous,not showy,showy,moderate,yes,low
+Rosaceae,Pyrus kawakamii,Evergreen Pear,evergreen,not showy,showy,low,yes,medium
+Rosaceae,Quillaja saponaria,Soapbark Tree,evergreen,showy,showy,low,yes,medium
+Rutaceae,Geijera parviflora,Australian Willow,evergreen,showy,showy,moderate,yes,medium
+Sapindaceae,Koelreuteria bipinnata,Chinese Flame Tree,deciduous,showy,showy,moderate,yes,low
+Sapindaceae,Koelreuteria paniculata,Golden Rain Tree,deciduous,showy,showy,moderate,yes,low
+Sapindaceae (Aceraceae),Acer rubrum,Red maple,deciduous,not showy,showy,high,no,low
+Sapindaceae (Aceraceae),Acer x freemanii 'Autumn Blaze',Autumn Blaze,deciduous,not showy,showy,high,no,low
+Sapindaceae (Hippocastanaceae),Aesculus californica,California Buckeye,deciduous,showy,showy,moderate,yes,medium
+Sapindaceae (Hippocastanaceae),Aesculus carnea ,Red Horsechestnut,deciduous,showy,showy,moderate,yes,medium
+Tiliaceae/Malvaceae,Tilia cordata,Linden,deciduous,showy,showy,moderate,no,medium
+Arecaceae,Brahea edulis,Guadalupe Palm,,,,,,
