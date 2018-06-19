@@ -1,10 +1,5 @@
 var table;
 
-// var northernmost_lon_of_sf = 37.82573478;
-// var southernmost_lon_of_sf = 37.63989053;
-// var westernnmost_lat_of_sf = -122.5115789;
-// var easternmost_lat_of_sf = -122.3677186;
-
 var northernmost_lon_of_sf = 37.8346129354;
 var southernmost_lon_of_sf = 37.6869807475;
 var westernnmost_lat_of_sf = -122.5214423675;
@@ -28,10 +23,14 @@ function setup() {
   createCanvas(canvas_width, canvas_height);
   noStroke()
 
-
   background(0, 0, 0)
 
+
+}
+
 //make draw function
+function draw() {
+
   var tree_rows = table_trees.getRows()
   for (var r = 0; r < tree_rows.length; r++) {
     // choosing the location of the dot
@@ -57,7 +56,6 @@ function setup() {
         fill(75, 250, 20); //green
       }
     }
-
 
     // drawing the dot
     var x = map(lon, westernnmost_lat_of_sf, easternmost_lat_of_sf, 0, width)
