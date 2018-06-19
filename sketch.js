@@ -3,7 +3,11 @@ var table;
 var northernmost_lon_of_sf = 37.8346129354;
 var southernmost_lon_of_sf = 37.6869807475;
 var westernnmost_lat_of_sf = -122.5214423675;
-var easternmost_lat_of_sf = -122.3530420064;
+var easternmost_lat_of_sf = -122.3530420064
+
+var bloom = false;
+var fruit = false;
+var drought_tolerant = false;
 
 function preload() {
   table_trees = loadTable("trees.csv", "csv", "header")
@@ -24,8 +28,28 @@ function setup() {
   noStroke()
 
   background(0, 0, 0)
+}
 
+function keyTyped() {
+  // use keypressed to simulate buttons
 
+  // each key will toggle a variable relating to the trees ()
+  if (key === 'a') {
+    bloom = true;
+  } else if (key === 'b') {
+    bloom = false;
+  } else if (key === 'c') {
+    fruit = true;
+  } else if (key === 'd') {
+    fruit = false;
+  } else if (key === 'e') {
+    drought_tolerant = true;
+  } else if (key === 'f') {
+    drought_tolerant = false;
+  }
+
+  // uncomment to prevent any default behaviour
+  // return false;
 }
 
 //make draw function
@@ -44,13 +68,25 @@ function draw() {
 
     if(directory_row!==null){
       if(directory_row.getString("Fruit")==="showy") {
-        fill(254, 127, 146); //pink
+        if (fruit === true) {
+          fill(254, 127, 146); //pink
+        } else {
+          fill(0, 0, 0);
+        }
       }
       else if(directory_row.getString("Bloom")==="showy") {
-        fill(0,191,255); //pink
+        if (bloom === true) {
+          fill(0,191,255); // blue(ish)
+        } else {
+          fill (0, 0, 0);
+        }
       }
       else if(directory_row.getString("Drought-Tolerant?")==="yes") {
-        fill(255,255,255); //pink
+        if (drought_tolerant === true) {
+          fill(255,255,255); //pink
+        } else {
+          fill(0, 0, 0);
+        }
       }
       else {
         fill(75, 250, 20); //green
