@@ -12,8 +12,9 @@ var drought_tolerant = false;
 function preload() {
   table_trees = loadTable("trees.csv", "csv", "header")
   table_directory = loadTable("directory.csv", "csv", "header")
-  console.log("table_directory:");
-  console.log(table_directory);
+  table_landmark = loadTable("Landmark.csv", "csv", "header")
+  console.log("table_landmark:");
+  console.log(table_landmark);
 }
 
 function setup() {
@@ -52,38 +53,48 @@ function keyTyped() {
   // return false;
 }
 
-//make draw function
-function draw() {
+function drawTreeDots(rows, landmark) {
 
-  var tree_rows = table_trees.getRows()
-  for (var r = 0; r < tree_rows.length; r++) {
+  for (var r = 0; r < rows.length; r++) {
     // choosing the location of the dot
-    var lon = tree_rows[r].getNum("lon")
-    var lat = tree_rows[r].getNum("lat")
+    var lon = rows[r].getNum("lon")
+    var lat = rows[r].getNum("lat")
 
     // choose the colour of the dot
-    var species = tree_rows[r].getString("Species");
+    var species = rows[r].getString("Species");
     //console.log(species);
     var directory_row = table_directory.findRow(species,"Scientific Name");
 
     if(directory_row!==null){
       if(directory_row.getString("Fruit")==="showy") {
         if (fruit === true) {
-          fill(254, 127, 146); //pink
+          if (landmark === true) {
+            fill(255,255,0); // gold
+          } else {
+            fill(254, 127, 146); // pink
+          }
         } else {
           fill(0, 0, 0);
         }
       }
       else if(directory_row.getString("Bloom")==="showy") {
         if (bloom === true) {
-          fill(0,191,255); // blue(ish)
+          if (landmark === true) {
+            fill(255,255,0); // gold
+          } else {
+            fill(0,191,255); // blue(ish)
+          }
         } else {
           fill (0, 0, 0);
         }
       }
       else if(directory_row.getString("Drought-Tolerant?")==="yes") {
         if (drought_tolerant === true) {
-          fill(255,255,255); //pink
+          if (landmark === true) {
+            fill(255,255,0); // gold
+          } else {
+            fill(255,255,255); //pink
+          }
         } else {
           fill(0, 0, 0);
         }
@@ -96,8 +107,24 @@ function draw() {
     // drawing the dot
     var x = map(lon, westernnmost_lat_of_sf, easternmost_lat_of_sf, 0, width)
     var y = map(lat, southernmost_lon_of_sf, northernmost_lon_of_sf, height, 0)
-    ellipse(x, y, 1, 1)
+
+    // if landmark is true, make the dot big, otherwise, keep it Small
+    if (landmark === true) {
+        ellipse(x, y, 5, 5);
+    } else {
+      ellipse(x, y, 1, 1);
+    }
   }
+}
+
+//make draw function
+function draw() {
+  var tree_rows = table_trees.getRows();
+  var landmark_rows = table_landmark.getRows();
+
+  drawTreeDots(tree_rows, false);
+  drawTreeDots(landmark_rows, true);
+
 
 }
 
