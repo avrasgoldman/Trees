@@ -25,8 +25,10 @@ function setup() {
   var canvas_height = 800;
   var canvas_width = canvas_height * aspect_ratio;
 
+
   createCanvas(canvas_width, canvas_height);
   noStroke()
+  //createCanvas.position(500, 100);
 
   background(0, 0, 0)
 }
@@ -110,7 +112,7 @@ function drawTreeDots(rows, landmark) {
 
     // if landmark is true, make the dot big, otherwise, keep it Small
     if (landmark === true) {
-        ellipse(x, y, 5, 5);
+        ellipse(x, y, 7, 7);
     } else {
       ellipse(x, y, 1, 1);
     }
@@ -122,8 +124,8 @@ function draw() {
   var tree_rows = table_trees.getRows();
   var landmark_rows = table_landmark.getRows();
 
-  drawTreeDots(tree_rows, false);
-  drawTreeDots(landmark_rows, true);
+  drawTreeDots(tree_rows, false); // mapping generic trees
+  drawTreeDots(landmark_rows, true); // mapping the landmark trees
 
 
 }
