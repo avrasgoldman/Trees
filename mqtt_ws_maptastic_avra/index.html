@@ -1,0 +1,353 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+  <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300"<script/>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+
+   <style>
+   body {
+     padding: 0;
+     margin: 0;
+     background-color: black;
+     cursor: none;
+   }
+
+   #wrapper {
+     width: 1200px;
+     background: black;
+     margin: 0, auto;
+     }
+
+  #names {
+     /* width:30%;
+     height: 800px;
+     float: left;
+     background: black;
+     padding-left: 2%;
+     margin:0 auto; */
+
+     margin: 0 auto;
+     position: absolute;
+     top: 200px;
+     left: 1%;
+     background: black;
+     padding-left: 2%;
+     height: 800px;
+   }
+   #fruitNames {
+     display: none;
+     float: right;
+     height: 100%;
+
+   }
+   #bloomNames {
+     display: none;
+     float: right;
+     height: 100%;
+   }
+   #legend {
+
+   }
+
+
+
+   h1{
+     color: white;
+     font-size: 3em;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 300;
+     margin-bottom: 0;
+
+   }
+   h2{
+     color: white;
+     font-size: 1.3em;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 100
+   }
+   #heading{
+     font-family: 'Raleway', sans-serif;
+     margin: 0 auto;
+     text-align: left;
+     padding-top: 2%;
+     margin-left: 7%
+   }
+   canvas {
+      margin: 0, auto;
+      /* float: right; */
+      margin-left: 30%;
+    }
+   #drought_tolerantNames {
+     display: none;
+     float: right;
+     height: 100%;
+
+   }
+   #Drought-Tolerant {
+     color: rgb(255,191,0);
+     font-size: 1.3em;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 200;
+     float: left;
+     margin-left: 0%;
+   }
+   #Bloom {
+     color: rgb(153, 153, 255);
+     font-size: 1.3em;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 200;
+     float: left;
+     margin-left: 5%;
+   }
+
+   #Fruit {
+     color: rgb(255,0,102);
+     font-size: 1.3em;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 200;
+     float: left;
+     margin-left: 5%;
+   }
+   #Landmark {
+     color: rgb(75, 250, 20);
+     font-size: 1.3em;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 200;
+     float: left;
+     margin-left: 5%;
+   }
+   li{
+     font-family: 'Raleway', sans-serif;
+     font-weight: 300;
+     font-size: 12px;
+     color: white;
+   }
+   ul {
+     list-style-type: none;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <div id="heading">
+    <h1>SAN FRANCISCO URBAN TREES</h1>
+
+    <div id="legend">
+      <h2 id="Drought-Tolerant">Drought-Tolerant</h2>
+      <h2 id="Bloom">Bloom</h2>
+      <h2 id="fruit">Fruit</h2>
+      <h2 id="Landmark">Landmark Trees</h2>
+    </div>
+  </div>
+</div>
+  <div id="names">
+<!-- <h2 style="font-family: 'Raleway', sans-serif; font-weight: 300; color: black"> TREE NAMES</h2> -->
+
+
+<div id="fruitNames">
+
+  <ul>
+<li>Brazilian Pepper Tree</li>
+<li>Windmill Palm</li>
+<li>River Birch</li>
+<li>European White Birch</li>
+<li>Carob Tree</li>
+<li>Coast Live Oak</li>
+<li>Scarlet Oak</li>
+<li>Cork Oak</li>
+<li>Oriental Sweetgum</li>
+<li>White Ash</li>
+<li>London Plane Tree</li>
+<li>Carrotwood</li>
+<li>Vine Maple</li>
+<li>Chinese Pistache</li>
+<li>Pepper Tree</li>
+<li>Jacaranda</li>
+<li>Japanese Blueberry Tree</li>
+<li>Strawberry Tree</li>
+<li>Bailey's Acacia</li>
+<li>Gold Medallion Tree</li>
+<li>Western Redbud</li>
+<li>Purple Robe Locust</li>
+<li>Crepe Myrtle</li>
+<li>Champaca</li>
+<li>Sweet Michelia</li>
+<li>Southern Magnolia</li>
+<li>Saucer Magnolia</li>
+<li>Primrose Tree</li>
+<li>Sweetshade</li>
+<li>Karo</li>
+<li>Lemonwood Tree</li>
+<li>Kohuhu, Black Pittosporum</li>
+<li>Victorian Box</li>
+<li>English Hawthorn</li>
+<li>Washington Thorn</li>
+<li>Japanese Flowering Crabapple</li>
+<li>Catalina Cherry</li>
+<li>Flowering Plum</li>
+<li>Soapbark Tree</li>
+<li>Australian Willow</li>
+<li>Chinese Flame Tree</li>
+<li>Golden Rain Tree</li>
+<li>California Buckeye</li>
+<li>Red Horsechestnut</li>
+<li>Linden</li>
+  </ul>
+</div>
+
+<div id="bloomNames">
+  <ul>
+    <!-- <h2>Blooming</h2> -->
+<li>Dracaena Palm</li></li>
+<li>Camphor Tree</li></li>
+<li>Myoporum</li></li>
+<li>Peppermint Willow</li></li>
+<li>Lemon Bottlebrush</li></li>
+<li>Weeping Bottlebrush</li></li>
+<li>Red-flowering Gum</li></li>
+<li>Red Ironbark</li></li>
+<li>Australian Tea Tree</li></li>
+<li>New Zealand Tea Tree</li></li>
+<li>Brisbane Box</li></li>
+<li>Heath Melaleuca</li></li>
+<li>Flaxleaf Paperbark</li></li>
+<li>Pink Melaleuca</li></li>
+<li>Cajeput Tree</li></li>
+<li>New Zealand Christmas Tree</li></li>
+<li>Small-Leaf Tristania</li></li>
+<li>Glossy Privet</li></li>
+<li>Olive Tree</li></li>
+<li>Sweet Hakea</li></li>
+<li>California Lilac</li></li>
+<li>Bronze Loquat</li></li>
+<li>Fernleaf Catalina Ironwood</li></li>
+<li>Purple-Leaf Plum</li></li>
+<li>Flowering Cherry</li></li>
+<li>Daybreak Cherry</li></li>
+<li>Flowering Pear</li></li>
+<li>Evergreen Pear</li></li>
+<li>Red maple</li></li>
+<li>Autumn Blaze</li></li>
+<li>Chinese Pistache</li></li>
+<li>Pepper Tree</li></li>
+<li>Jacaranda</li></li>
+<li>Japanese Blueberry Tree</li></li>
+<li>Strawberry Tree</li></li>
+<li>Bailey's Acacia</li></li>
+<li>Gold Medallion Tree</li></li>
+<li>Western Redbud</li></li>
+<li>Purple Robe Locust</li></li>
+<li>Crepe Myrtle</li></li>
+<li>Champaca</li></li>
+<li>Sweet Michelia</li></li>
+<li>Southern Magnolia</li></li>
+<li>Saucer Magnolia</li></li>
+<li>Primrose Tree</li></li>
+<li>Sweetshade</li></li>
+<li>Karo</li></li>
+<li>Lemonwood Tree</li></li>
+<li>Kohuhu, Black Pittosporum</li></li>
+<li>Victorian Box</li></li>
+<li>English Hawthorn</li></li>
+<li>Washington Thorn</li></li>
+<li>Japanese Flowering Crabapple</li></li>
+<li>Catalina Cherry</li></li>
+<li>Flowering Plum</li></li>
+<li>Soapbark Tree</li></li>
+<li>Australian Willow</li></li>
+<li>Chinese Flame Tree</li></li>
+<li>Golden Rain Tree</li></li>
+<li>California Buckeye</li></li>
+<li>Red Horsechestnut</li></li>
+<li>Linden</li></li>
+</ul></li>
+</div></li>
+
+<div id="drought_tolerantNames">
+  <ul>
+    <!-- <h2>Drought Tolerant</h2> -->
+<li>Mediterranean Fan Palm</li>
+<li>Mountain She-Oak</li>
+<li>Beefwood</li>
+<li>Black Acacia</li>
+<li>Honeylocust</li>
+<li>Maidenhair Tree</li>
+<li>Grecian Laurel</li>
+<li>White Mulberry</li>
+<li>Silver Dollar Gum</li>
+<li>Evergreen Ash</li>
+<li>Italian Stone Pine</li>
+<li>Trident Maple</li>
+<li>Carob Tree</li>
+<li>Coast Live Oak</li>
+<li>Scarlet Oak</li>
+<li>Cork Oak</li>
+<li>Carrotwood</li>
+<li>Dracaena Palm</li>
+<li>Camphor Tree</li>
+<li>Peppermint Willow</li>
+<li>Lemon Bottlebrush</li>
+<li>Weeping Bottlebrush</li>
+<li>Red-flowering Gum</li>
+<li>Red Ironbark</li>
+<li>Australian Tea Tree</li>
+<li>New Zealand Tea Tree</li>
+<li>Brisbane Box</li>
+<li>Heath Melaleuca</li>
+<li>Flaxleaf Paperbark</li>
+<li>Pink Melaleuca</li>
+<li>Cajeput Tree</li>
+<li>New Zealand Christmas Tree</li>
+<li>Glossy Privet</li>
+<li>Olive Tree</li>
+<li>Sweet Hakea</li>
+<li>California Lilac</li>
+<li>Bronze Loquat</li>
+<li>Fernleaf Catalina Ironwood</li>
+<li>Flowering Pear</li>
+<li>Evergreen Pear</li>
+<li>Chinese Pistache</li>
+<li>Pepper Tree</li>
+<li>Strawberry Tree</li>
+<li>Bailey's Acacia</li>
+<li>Gold Medallion Tree</li>
+<li>Western Redbud</li>
+<li>Purple Robe Locust</li>
+<li>Crepe Myrtle</li>
+<li>Southern Magnolia</li>
+<li>Primrose Tree</li>
+<li>Karo</li>
+<li>Lemonwood Tree</li>
+<li>Victorian Box</li>
+<li>English Hawthorn</li>
+<li>Washington Thorn</li>
+<li>Catalina Cherry</li>
+<li>Soapbark Tree</li>
+<li>Australian Willow</li>
+<li>Chinese Flame Tree</li>
+<li>Golden Rain Tree</li>
+<li>California Buckeye</li>
+<li>Red Horsechestnut</li>
+</ul>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
